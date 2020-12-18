@@ -7,28 +7,22 @@ import './App.css';
 //망함 모르겟음....
 // 여기에 작성하는게 맞는건가..
 const axios = require('axios');
-/*function test(){
-    console.log('호츌');
-    //{}로 어ㅓ케 불러오지..
-
-}*/
 function call(){
-    axios.get('https://dog.ceo/api/breeds/list/all')
-        //.then을 사용하면 promise 객체를 부른거다
-        .then(function(response){
-            console.log(response.data.message);
-            // setter(response)
-        })
+  axios.get('https://dog.ceo/api/breeds/list/all')
+      //.then을 사용하면 promise 객체를 부른거다
+      .then(function(response){
+          console.log(response.data.message);
+          // setter(response)
+      })
 }
 
 function App() {
-    console.log('sdfghj');
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-            모르겠다.. 구글링의 한계다..d
+            React를 박살내자.
         </p>
       </header>
     </div>
